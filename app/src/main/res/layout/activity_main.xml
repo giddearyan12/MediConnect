@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <FrameLayout
+       android:id="@+id/container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginBottom="?attr/actionBarSize"
+       android:background="#FFD0EAED">
+      <!-- TODO: Update blank fragment layout -->
+      <LinearLayout
+          android:id="@+id/container1"
+          android:layout_width="match_parent"
+          android:layout_height="703dp"
+          android:layout_marginBottom="?attr/actionBarSize"
+          android:background="#FFD0EAED"
+          android:orientation="vertical">
+
+
+         <LinearLayout
+             android:id="@+id/linearLayout2"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:background="#A9B1F4"
+             android:orientation="horizontal"
+             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.0"
+             tools:ignore="VisualLintBounds">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="324dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/one"
+                android:gravity="center|left"
+                android:paddingLeft="15dp"
+                android:text="MediConnect"
+                android:textColor="#FAFAFB"
+                android:textSize="28sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:gravity="center|right" />
+
+         </LinearLayout>
+
+         <EditText
+             android:id="@+id/editTextText4"
+             android:layout_width="match_parent"
+             android:layout_height="48dp"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginStart="7dp"
+             android:layout_marginLeft="7dp"
+             android:layout_marginTop="7dp"
+             android:layout_marginEnd="7dp"
+             android:layout_marginRight="7dp"
+             android:background="@color/white"
+             android:drawableLeft="@drawable/baseline_search_24"
+
+             android:drawablePadding="8dp"
+             android:ems="10"
+             android:foregroundGravity="center_horizontal"
+             android:hint="Search for Doctors"
+             android:inputType="text"
+             android:paddingStart="20dp"
+             android:paddingLeft="3dp"
+             android:textColor="@color/black" />
+
+         <HorizontalScrollView
+             android:id="@+id/horizontalScrollView"
+             android:layout_width="392dp"
+             android:layout_height="193dp"
+             android:layout_marginTop="5dp"
+             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.333"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+             app:layout_constraintVertical_bias="0.037">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFD0EAED"
+                android:orientation="horizontal">
+
+               <ImageView
+                   android:id="@+id/imageView6"
+                   android:layout_width="300dp"
+                   android:layout_height="250dp"
+                   android:layout_gravity="center"
+                   app:srcCompat="@drawable/e" />
+
+               <ImageView
+                   android:id="@+id/imageView7"
+                   android:layout_width="300dp"
+                   android:layout_height="187dp"
+                   android:layout_gravity="center"
+                   app:srcCompat="@drawable/f" />
+
+               <ImageView
+                   android:id="@+id/imageView8"
+                   android:layout_width="300dp"
+                   android:layout_height="188dp"
+                   android:layout_gravity="center"
+                   app:srcCompat="@drawable/h" />
+            </LinearLayout>
+
+         </HorizontalScrollView>
+
+         <GridLayout
+             android:layout_width="411dp"
+             android:layout_height="344dp"
+             android:layout_gravity="center"
+             android:layout_margin="20dp"
+             android:background="#FFD0EAED"
+             android:columnCount="2"
+             android:foregroundGravity="center_vertical|center"
+             android:rowCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="114dp"
+                android:layout_height="118dp"
+
+                android:layout_margin="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="70dp"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@color/white"
+                   android:gravity="center_horizontal"
+                   android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="86dp"
+                      android:layout_height="77dp"
+                      android:src="@drawable/i" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="Child"
+                      android:textSize="15sp" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="114dp"
+                android:layout_height="118dp"
+
+                android:layout_margin="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@color/white"
+                   android:gravity="center_horizontal"
+                   android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="86dp"
+                      android:layout_height="77dp"
+                      android:src="@drawable/j" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="Heart"
+                      android:textSize="15sp" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview3"
+                android:layout_width="114dp"
+                android:layout_height="118dp"
+
+                android:layout_marginLeft="70dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@color/white"
+                   android:gravity="center_horizontal"
+                   android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="86dp"
+                      android:layout_height="77dp"
+                      android:src="@drawable/k" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="Brain"
+                      android:textSize="15sp" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview4"
+                android:layout_width="114dp"
+                android:layout_height="118dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#A9B1F4"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@color/white"
+                   android:gravity="center_horizontal"
+                   android:orientation="vertical"
+                   android:paddingBottom="5dp">
+
+                  <ImageView
+                      android:layout_width="86dp"
+                      android:layout_height="77dp"
+                      android:src="@drawable/l" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="Eye"
+                      android:textSize="15sp" />
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+         </GridLayout>
+
+
+      </LinearLayout>
+
+   </FrameLayout>
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/bnView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:background="@color/white"
+       app:menu="@menu/nav_items"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

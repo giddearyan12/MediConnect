@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/nav_home"
+    android:title="Home"
+    android:icon="@drawable/baseline_home_24"></item>
+    <item android:id="@+id/nav_mydoctors"
+        android:title="My Doctors"
+        android:icon="@drawable/baseline_medical_services_24"></item>
+    <item android:id="@+id/nav_records"
+        android:title="Records"
+        android:icon="@drawable/baseline_perm_contact_calendar_24"></item>
+    <item android:id="@+id/nav_more"
+        android:title="More"
+        android:icon="@drawable/baseline_more_vert_24"></item>
+</menu>

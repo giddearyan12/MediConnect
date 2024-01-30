@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MediConnect</string>
+    <string name="search_for_doctors">Search For Doctors</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <string name="d1">15 years Experience,
+2999 consultations completed</string>
+    <string name="d2">MA-Psychology, Post Graduate
+Diploma in Counselling and Behaviour Modification</string>
+    <string name="d3">Counselling Psychologist</string>
+
+
+
+    <string name="step1">
+           User need to specify if user is doctor or patient and then login. Fill user name and enter your password and then click on login.
+    </string>
+
+    <string name="step2">
+       Once user logged in, user need to choose which specilist doctor user want to book. Once user chooses the specilist, user will get list of that specific specialist doctor.
+        User can also search for specific doctor using above search bar.
+    </string>
+
+    <string name="step3">
+      After choosing the specific doctor user will get to see all details of that doctor. User will also get to see available time slots.
+        User can select slot and just click on book to book appointment.
+    </string>
+
+    <string name="tips">
+       A healthy lifestyle can help you thrive throughout your life. Making healthy choices isn\'t always easy, however. It can be hard to find the time and energy to exercise regularly or prepare healthy meals. However, your efforts will pay off in many ways, and for the rest of your life.
+    </string>
+
+    <string name="tip2">
+        A lot of factors play a role in staying healthy. In turn, good health can decrease your risk of developing certain diseases or conditions. These include heart disease, stroke, some cancers, and injuries. Learn what you can do to maintain you and your family’s health.
+
+    </string>
+
+    <string name="Learn_more"><a href="https://familydoctor.org/what-you-can-do-to-maintain-your-health/">Learn more....</a></string>
+</resources>
